@@ -1,0 +1,23 @@
+{
+  "name": "vmph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victormendozae/VMPH.git"
+  },
+  "author": "Victor Mendoza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victormendozae/VMPH/issues"
+  },
+  "homepage": "https://github.com/victormendozae/VMPH#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}
