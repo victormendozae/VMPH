@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: #000000;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+}
+
+nav div ul{
+    text-align: center;
+}
+
+header img{
+    width: 100%;
+}
+
+#vm{
+    margin-right: 25vw;
+}
+#ig{
+    margin-left: 25vw;
+}
+
+nav img{
+    height: 24px;
+    padding: 0px;
+    display: inline-block;
+}
+
+nav a:hover{
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+#ig:hover{
+    opacity: 0.6;
+}
+
+footer p{
+    text-align: center;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.active{
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.preview img {
+    margin: 10% 5%;
+    width: 90%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer{
+    background-color: #ffffff;
+    clear: both;
+}
+
+main p, h1{
+    background-color: #ffffff;
+    padding-top: 100px;
+    color: #000000;
+    text-align: center;
+}
+
+main{
+    width: 40vw;
+    padding: 5% 30%;
+    text-align: center;
+}
+
+h1{
+    font-size: 45px ;
+    background: #000000;
+    color: #ffffff;
+}
+
+.phead h1{
+    font-size: 40px;
+}
+.prod h2{
+    width: 100%;
+    background-color: #000000;
+    display: block;
+    color: #ffffff;
+    background: url(../images/portfolio/producto/prod10.jpg);
+    background-size: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 12% 0%;
+    font-size: 5vw;
+    opacity: 0.7;
+}
+
+.phead p{
+    color: #ffffff;
+    text-align: center;
+    padding: 3%;
+    font-size: 13px;
+}
+
+.ret h2{
+    width: 100%;
+    background-color: #000000;
+    display: block;
+    color: #ffffff;
+    background: url(../images/portfolio/Retratos/ret1.jpg);
+    background-size: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 12% 0%;
+    font-size: 5vw;
+    opacity: 0.7;
+}
+
+
+.fs h2{
+    width: 100%;
+    background-color: #000000;
+    display: block;
+    color: #ffffff;
+    background: url(../images/portfolio/social/santip.jpg);
+    background-size: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 12% 0%;
+    font-size: 5vw;
+    opacity: 0.7;
+}
+
+.ret h2:hover, .prod h2:hover, .fs h2:hover{
+    opacity: 1;
+}
+
+.bodyport{
+    background-color: #000000;
+}
+
+footer, footer p{
+    background: #000000;
+    color: #ffffff;
+}
+
+.prod img, .ret img, .fs img{
+    width: 40%;
+    margin: 3%;
+    border-radius: 5px;
+}
+
+.prod, .ret, .fs{
+    text-align: center;
+}
+
+#container{
+    flex: 1;
+}
+
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2%;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+#txt {
+    text-align: center;
+    margin: 10%;
+    font-size: 400%;
+}

@@ -5,7 +5,11 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin images/* --out-dir dist/images",
+    "copy": "copyfiles *.html dist && copyfiles css/*.css dist && copyfiles js/*.js dist",
+    "build": "npm run clean && npm run imagemin && npm run copy"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,16 @@
   },
   "homepage": "https://github.com/victormendozae/VMPH#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "copyfiles": "^2.3.0",
+    "cssmin": "^0.4.3",
+    "htmlmin": "0.0.7",
+    "lite-server": "^2.5.4",
+    "onchange": "^7.0.2",
+    "rimraf": "^3.0.2",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
+  },
+  "dependencies": {
+    "imagemin-cli": "^6.0.0"
   }
 }
