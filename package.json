@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server",
     "clean": "rimraf dist",
-    "imagemin": "imagemin images/* --out-dir dist/images",
+    "imagemin": "imagemin images/*.jpg --out-dir dist/images",
     "copy": "copyfiles *.html dist && copyfiles css/*.css dist && copyfiles js/*.js dist",
     "build": "npm run clean && npm run imagemin && npm run copy"
   },

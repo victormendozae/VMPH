@@ -2,11 +2,11 @@
     margin: 0px;
     padding: 0px;
 }
+
 nav{
     background-color: #000000;
     text-align: center;
-    width: 100vw;
-    position: fixed;
+    width: 100%;
 }
 
 nav div ul{
@@ -17,26 +17,9 @@ header img{
     width: 100%;
 }
 
-#vm{
-    margin-right: 25vw;
-}
-#ig{
-    margin-left: 25vw;
-}
-
-nav img{
-    height: 24px;
-    padding: 0px;
-    display: inline-block;
-}
-
 nav a:hover{
     border-bottom: 1px solid #ffffff;
     color: #ffffff;
-}
-
-#ig:hover{
-    opacity: 0.6;
 }
 
 footer p{
@@ -56,6 +39,8 @@ footer p{
     width: 90%;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 footer{
@@ -82,20 +67,30 @@ h1{
     color: #ffffff;
 }
 
-.phead h1{
+.phead h1, .sm h1{
     font-size: 40px;
 }
+
+.sm h1{
+    color: black;
+    background-color: white;
+}
+
+.sm{
+     width: 100%;
+}
+
 .prod h2{
     width: 100%;
     background-color: #000000;
     display: block;
     color: #ffffff;
-    background: url(../images/portfolio/producto/prod10.jpg);
+    background: url(../images/prod10.jpg);
     background-size: 100%;
     width: 100%;
     text-align: center;
     padding: 12% 0%;
-    font-size: 5vw;
+    font-size: 300%;
     opacity: 0.7;
 }
 
@@ -111,12 +106,12 @@ h1{
     background-color: #000000;
     display: block;
     color: #ffffff;
-    background: url(../images/portfolio/Retratos/ret1.jpg);
+    background: url(../images/ret1.jpg);
     background-size: 100%;
     width: 100%;
     text-align: center;
     padding: 12% 0%;
-    font-size: 5vw;
+    font-size: 300%;
     opacity: 0.7;
 }
 
@@ -126,12 +121,12 @@ h1{
     background-color: #000000;
     display: block;
     color: #ffffff;
-    background: url(../images/portfolio/social/santip.jpg);
+    background: url(../images/santip.jpg);
     background-size: 100%;
     width: 100%;
     text-align: center;
     padding: 12% 0%;
-    font-size: 5vw;
+    font-size: 300%;
     opacity: 0.7;
 }
 
@@ -149,10 +144,13 @@ footer, footer p{
 }
 
 .prod img, .ret img, .fs img{
-    width: 40%;
-    margin: 3%;
+    width: 90%;
+    margin: 5%;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
 
 .prod, .ret, .fs{
     text-align: center;
@@ -177,4 +175,86 @@ body{
     text-align: center;
     margin: 10%;
     font-size: 400%;
+}
+
+#firmaportada {
+    opacity: 1 !important;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #ffffff !important;
+    font-size: 60px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#img01 {
+    opacity: 1 !important;
+}
+
+.modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 70%;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+img:hover {opacity: 0.7;}
+
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Large Screens*/
+@media screen and (min-width: 768px) {
+    .fs h2{
+        font-size: 600%;
+    }
+
+    .ret h2{
+        font-size: 600%;
+    }
+
+    .prod h2{
+        font-size: 600%;
+    }
 }
